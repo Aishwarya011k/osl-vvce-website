@@ -157,16 +157,7 @@ const Description: React.FC<{ data: ContactQuery_site_siteMetadata_contact }> = 
                         </a>
                     </li>
                 )}
-                {data.phone && (
-                    <li className="flex items-center mt-4">
-                        <span className="text-secondary icon">
-                            <Phone />
-                        </span>
-                        <a className="ml-4" href={"tel:" + data.phone}>
-                            {data.phone}
-                        </a>
-                    </li>
-                )}
+                {/* Phone intentionally hidden per request - keep data available in siteMetadata */}
                 {data.address && (
                     <li className="flex items-start mt-4">
                         <span className="mt-1 text-secondary icon">

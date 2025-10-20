@@ -10,13 +10,15 @@
     "develop": "NODE_OPTIONS=\"--openssl-legacy-provider\" gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "NODE_OPTIONS=\"--openssl-legacy-provider\" gatsby serve",
     "clean": "NODE_OPTIONS=\"--openssl-legacy-provider\" gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.5.8",
     "@mdx-js/react": "^1.5.8",
+    "@supabase/supabase-js": "^2.76.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
     "gatsby": "^2.32.13",
     "gatsby-image": "^2.11.0",
     "gatsby-plugin-codegen": "^1.2.14",
@@ -38,9 +40,17 @@
     "tailwind-theme-switcher": "^1.0.2",
     "tailwindcss": "^1.9.6"
   },
+  "dependenciesMeta": {
+    "pg": {
+      "optional": true
+    }
+  },
+  "optionalDependencies": {
+    "pg": "^8.11.0"
+  },
   "devDependencies": {
-    "@babel/core": "^7.10.2",
     "@babel/compat-data": "^7.10.1",
+    "@babel/core": "^7.10.2",
     "@types/node": "^13.13.0",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
