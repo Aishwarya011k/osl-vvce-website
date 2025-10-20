@@ -8,8 +8,8 @@ import { Logo } from "../components/utils"
 import "../style/visitor-logbook.css"
 
 // Initialize Supabase client
-const supabaseUrl = process.env.GATSBY_SUPABASE_URL || 'https://cagzkldiukuvqmjzezxf.supabase.co'
-const supabaseKey = process.env.GATSBY_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhZ3prbGRpdWt1dnFtanplenhmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA4MTQ5NzgsImV4cCI6MjA3NjM5MDk3OH0.d2MsRoS6HavgGq2UU3FwZvvvkQBUCvp-w5Xt8b4AGus'
+const supabaseUrl = process.env.GATSBY_SUPABASE_URL
+const supabaseKey = process.env.GATSBY_SUPABASE_ANON_KEY
 
 console.log('Supabase URL:', supabaseUrl)
 console.log('Supabase Key exists:', !!supabaseKey)
