@@ -51,8 +51,12 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# dotenv environment variable files
-.env*
+# Environment variables (contains sensitive data like Supabase keys)
+.env
+.env.*
+.env.local
+.env.development
+.env.production
 
 # gatsby files
 .cache/
@@ -67,3 +71,24 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+index.html
+style.css
+
+# Local Netlify folder
+.netlify
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+.tmp
