@@ -8,7 +8,6 @@ const plugins = [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-codegen`,
     {
         resolve: `gatsby-source-filesystem`,
         options: {
