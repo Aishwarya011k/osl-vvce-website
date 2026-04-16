@@ -179,7 +179,7 @@ export default ({ data, location }) => {
                         <img
                             src="/images/faculty/chethana-ht.jpg"
                             alt="Dr. Chethana H T"
-                            className="mx-auto mb-6 h-48 w-48 rounded-full object-cover border-2 border-primary"
+                            className="mx-auto mb-6 h-48 w-48 rounded-lg object-cover border-2 border-primary"
                         />
                         <div className="text-center">
                             <h4 className="text-2xl font-semibold mb-2 text-color-default">
